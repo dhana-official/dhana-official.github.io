@@ -1,0 +1,2178 @@
+ /* importing font family */
+ @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+/* page default resetting */
+ *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+::selection{
+    color: black;
+    background: #FF2F6B;
+}
+.parent{
+    height: 80px;
+    width: 100%;
+    background: black;
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+.parent .head{
+    height: 100%;
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* for heading */
+.parent .head .get{
+    color: white;
+    font-size: 30px;
+}
+/* changes the frst letter of heading using pseudo elements */
+.parent .head .get::first-letter{
+    color: #FF2F6B;
+    font-weight: 700;
+    font-size: 34px;
+}
+.parent .home{
+    height: 100%;
+    width: 63%; 
+}
+/* to assemble nav bar */
+.parent .home ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 800;
+}
+/* to remove the underline in anchor tag */
+.parent .home ul a{
+    text-decoration: none;
+    color: white;
+}
+/* using hover to mouse actions */
+.parent .home ul a:hover{
+    color: #FF2F6B;
+}
+.parent .sub {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* button properties */
+.parent .sub button{
+    padding: 20px;
+    background-color: #FF2F6B;
+    color: white;
+    height: 12%;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    border: #FF2F6B 2px solid;
+    font-weight: 800;
+}
+/* button hover to mouse actions */
+.parent .sub button:hover{
+    background: black;
+    color: #FF2F6B;
+    border: #FF2F6B 2px solid;
+}
+.parent .nav{
+    height: 100%;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent .nav .bar{
+    font-size: 40px;
+    display: none;
+    cursor: pointer;
+}
+.child{
+    height: 87vh;
+    width: 100%;
+    background: black;
+    display: flex;
+    padding: 50px;
+}
+.child .image{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* to fix image */
+.child .image img{
+    height: 100%;
+}
+/* the following informations */
+.child .texts{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    padding: 20px 30px;
+    flex-direction: column;
+}
+.child .texts h3{
+    color: gainsboro;
+    word-spacing: 7px;
+    font-size: 25px;
+    margin-top: 75px;
+}
+.child .texts h1{
+    color: white;
+    margin-top: 10px;
+    font-size: 45px;
+}
+.child .texts .laks{
+    color: #FF2F6B;
+}
+.child .texts p{
+    color: gainsboro;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-top: 7px;
+    word-spacing: 9px;
+}
+.child .texts .info{
+    color: gainsboro;
+    font-size: 28px;
+    margin-top: 7px;
+    word-spacing: 9px;
+    margin-top: 20px;
+}
+.child .in{
+    margin-top: 15px;
+    height: 50px;
+    width: 70%;
+    background: white;
+    border: solid 2px #FF2F6B;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.child .in input{
+    border-radius:16px;
+    padding: 3px;
+    margin-left: 10px;
+    border: 0px;
+    height: 48px;
+    font-size: 17px;
+}
+.child .in input:focus {
+    outline: none;
+}
+.child .in .but{
+    height: 43px;
+    width: 90px;
+    padding: 2px 2px;
+    font-size: 12px;
+    border-radius: 16px;
+    border: 2px solid #FF2F6B;
+    background-color: #FF2F6B;
+    margin-right: 4px;
+    color: white;
+    font-weight: 800;
+}
+
+/* about section */
+.about{
+    height: 15vh;
+    width: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+.about h1{
+    color: white;
+    font-size: 29px;
+    margin-top: 76px;
+}
+.about .me{
+    color: #FF2F6B;
+}
+.abc{
+    height: 85vh;
+    width: 100%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.abc .col{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 30px;
+    margin-left: 50px;
+
+}
+.abc .col h4{
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+.abc .col p{
+    margin-top: 20px;
+    color: gainsboro;
+    font-size: 19px;
+    text-align: justify;
+    line-height: 35px;
+}
+.abc .col .dhana{
+    color: #FF2F6B;
+}
+.abc .col .btn{
+    text-decoration: none;
+}
+.abc .col .btn button{
+    margin-top: 20px;
+    padding: 20px;
+    background-color:#FF2F6B;
+    color:white;
+    height: 10%;
+    width: 25%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 800;
+    border:#FF2F6B 2px solid;
+}
+.abc .col button:hover{
+    background: black;
+    color: #FF2F6B;
+}
+.abc .rgb{
+    margin-right: 50px;
+    height: 80%;
+    width: 40%;
+}
+.abc .rgb img{
+    height: 100%;
+    width: 100%;
+}
+
+/* skills section */
+.skills{
+    height: 130vh;
+    width: 100%;
+    background: black;
+}
+.skil{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skil h1{
+    color: white;
+    font-size: 29px;
+}
+.skil .my{
+    color: #FF2F6B;
+}
+.avg{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.avg .one{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.avg .one .skil1{
+    height: 80%;
+    width: 17%;
+    box-shadow: 0px 0px 10px 1px gainsboro;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.avg .one .skil1:hover{
+    height: 80%;
+    width: 17%;
+    box-shadow: 0px 0px 0px 0px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 70px;
+}
+.avg .one .skil1 .a{
+    height: 160px;
+    width: 160px;
+    border-radius: 160px;
+    border:#FF2F6B 10px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avg .one .skil1 .a p{
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+}
+.avg .one .skil1 h1{
+    color: white;
+}
+.avg .one .skil2{
+    height: 80%;
+    width: 17%;
+    box-shadow: 0px 0px 10px 1px gainsboro;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.avg .one .skil2:hover{
+    height: 80%;
+    width: 17%;
+    box-shadow: 0px 0px 0px 0px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 70px;
+}
+.avg .one .skil2 .b{
+    height: 160px;
+    width: 160px;
+    border-radius: 160px;
+    border:#FF2F6B 10px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avg .one .skil2 .b p{
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+}
+.avg .one .skil2 h1{
+    color: white;
+}
+.avg .one .skil3{
+    height: 80%;
+    width: 17%;
+    box-shadow: 0px 0px 10px 1px gainsboro;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.avg .one .skil3:hover{
+    height: 80%;
+    width: 17%;
+    box-shadow: 0px 0px 0px 0px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 70px;
+}
+.avg .one .skil3 .c{
+    height: 160px;
+    width: 160px;
+    border-radius: 160px;
+    border:#FF2F6B 10px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avg .one .skil3 .c p{
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+}
+.avg .one .skil3 h1{
+    color: white;
+}
+
+.avg .two{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.avg .two .skil4{
+    height: 80%;
+    width: 17%;
+    box-shadow: 0px 0px 10px 1px gainsboro;
+    border-radius: 20px;
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.avg .two .skil4:hover{
+    height: 80%;
+    width: 17%;
+    box-shadow: 0px 0px 0px 0px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 70px;
+}
+.avg .two .skil4 .d{
+    height: 160px;
+    width: 160px;
+    border-radius: 160px;
+    border:#FF2F6B 10px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avg .two .skil4 .d p{
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+}
+.avg .two .skil4 h1{
+    color: white;
+}
+.avg .two .skil5{
+    height: 80%;
+    width: 17%;
+    box-shadow: 0px 0px 10px 1px gainsboro;
+    border-radius: 20px;
+    margin-right: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.avg .two .skil5:hover{
+    height: 80%;
+    width: 17%;
+    box-shadow: 0px 0px 0px 0px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 70px;
+}
+.avg .two .skil5 .e{
+    height: 160px;
+    width: 160px;
+    border-radius: 160px;
+    border:#FF2F6B 10px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.avg .two .skil5 .e p{
+    color: white;
+    font-size: 45px;
+    font-weight: 800;
+}
+.avg .two .skil5 h1{
+    color: white;
+}
+
+/* contact section */
+.contact{
+    height: 100vh;
+    width: 100%;
+    background: black;
+}
+.contact .con{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact .con h1{
+    color: white;
+    font-size: 29px;
+}
+.contact .con .us{
+    color: #FF2F6B;
+}
+.contact .name{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .name .num{
+    height: 90%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-left: 120px;
+}
+.contact .name .num .apple{
+    height: 33px;
+    width: 57%; 
+    font-size: 17px;
+    padding: 0px 10px;
+} 
+.contact .name .num .apple:focus{
+    outline: none;
+}
+.contact .name .num .banana{
+    height: 33px;
+    width: 57%; 
+    font-size: 17px;
+    padding: 0px 10px;
+} 
+.contact .name .num .banana:focus{
+    outline: none;
+}
+
+.contact .name .num .mango{
+    font-size: 17px;
+    padding: 0px 10px;
+}
+.contact .name .num .mango:focus{
+    outline: none;
+}
+
+.contact .name .num .kiwi{
+    background-color: #FF2F6B;
+    color: white;
+    padding: 10px 14px;
+    height: 50px;
+    border-radius: 35px;
+    font-size: 16px;
+    border: #FF2F6B 2px solid;
+    font-weight: 800;
+}
+.contact .name .num .kiwi:hover{
+    background: black;
+    color: #FF2F6B;
+}
+.contact .name .mail{
+    height: 90%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 120px;
+}
+.contact .name .mail .touch{
+    color: white;
+    word-spacing: 4px;
+}
+.contact .name .mail p{
+    color: gainsboro;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 30px;
+}
+.contact .name .mail .tube{
+    height: 50%;
+    width: 50%;
+}
+.contact .name .mail .tube .tube1{
+    height: 33%;
+    width: 100%;
+    display: flex;
+}
+.contact .name .mail .tube .tube1 .female{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.contact .name .mail .tube .tube1 .female .torso{
+    font-size: 60px;
+}
+.contact .name .mail .tube .tube1 .female .torso:hover{
+    color: #FF2F6B !important;
+}
+.contact .name .mail .tube .tube1 .fem{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact .name .mail .tube .tube1 .fem h3{
+    color: white;
+    font-size: 20px;
+}
+.contact .name .mail .tube .tube1 .fem p{
+    color: gainsboro;
+    font-size: 16px;
+}
+.contact .name .mail .tube .tube2{
+    height: 33%;
+    width: 100%;
+    display: flex;
+}
+.contact .name .mail .tube .tube2 .address{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.contact .name .mail .tube .tube2 .address .man{
+    font-size: 47px;
+}
+.contact .name .mail .tube .tube2 .address .man:hover{
+    color: #FF2F6B !important;
+}
+.contact .name .mail .tube .tube2 .location{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact .name .mail .tube .tube2 .location h3{
+    color: white;
+    font-size: 20px;
+}
+.contact .name .mail .tube .tube2 .location p{
+    color: gainsboro;
+    font-size: 16px;
+}
+.contact .name .mail .tube .tube3{
+    height: 33%;
+    width: 100%;
+    display: flex;
+}
+.contact .name .mail .tube .tube3 .main{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.contact .name .mail .tube .tube3 .main .mono{
+    font-size: 53px;
+}
+.contact .name .mail .tube .tube3 .main .mono:hover{
+    color: #FF2F6B !important;
+}
+.contact .name .mail .tube .tube3 .sec{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact .name .mail .tube .tube3 .sec h3{
+    color: white;
+    font-size: 20px;
+}
+.contact .name .mail .tube .tube3 .sec p{
+    color: gainsboro;
+    font-size: 16px;
+}
+.contact .foot{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .foot h2{
+    color: white;  
+    word-spacing: 5px;
+}
+.contact .foot .footer{
+    color: #FF2F6B;
+}
+
+/* for tablet responsive */
+@media only screen and (max-width:769px){
+
+/* home section for tab responsive */
+    .parent{
+        height: 100%;
+        width: 100%;
+        background: black;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+    }
+    .parent .head{
+        height: 100%;
+        width: 22%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* for heading */
+    .parent .head .get{
+        color: white;
+        font-size: 30px;
+    }
+    /* changes the frst letter of heading using pseudo elements */
+    .parent .head .get::first-letter{
+        color: #FF2F6B;
+        font-weight: 700;
+        font-size: 34px;
+    }
+    .parent .home{
+        height: 100%;
+        width: 62%;  
+    }
+    /* to assemble nav bar */
+    .parent .home ul{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style-type: none;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    /* to remove the underline in anchor tag */
+    .parent .home ul a{
+        text-decoration: none;
+        color: white;
+    }
+    /* using hover to mouse actions */
+    .parent .home ul a:hover{
+        color: #FF2F6B;
+    }
+    .parent .sub {
+        height: 100%;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* button properties */
+    .parent .sub button{
+        padding: 8px 14px;
+        background-color: #FF2F6B;
+        color: white;
+        border-radius: 35px;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        border: #FF2F6B 2px solid;
+        font-weight: 800;
+    }
+    /* button hover to mouse actions */
+    .parent .sub button:hover{
+        background: black;
+        color: #FF2F6B;
+        border: #FF2F6B 2px solid;
+    }
+    .parent .nav{
+        height: 100%;
+        width: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parent .nav .bar{
+        font-size: 40px;
+        display: none;
+        cursor: pointer;
+    } 
+
+    .child{
+        height: 100%;
+        width: 100%;
+        background: black;
+        display: flex;
+        padding: 50px;
+    }
+    .child .image{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* to fix image */
+    .child .image img{
+        height: 100%;
+    }
+    /* the following informations */
+    .child .texts{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        padding: 0px 20px;
+        flex-direction: column;
+    }
+    .child .texts h3{
+        color: gainsboro;
+        word-spacing: 7px;
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    .child .texts h1{
+        color: white;
+        margin-top: 5px;
+        font-size: 45px;
+    }
+    .child .texts .laks{
+        color: #FF2F6B;
+    }
+    .child .texts p{
+        color: gainsboro;
+        margin-top: 5px;
+        font-size: 16px;
+        margin-top: 5px;
+        word-spacing: 9px;
+    }
+    .child .texts .info{
+        color: gainsboro;
+        font-size: 28px;
+        margin-top: 5px;
+        word-spacing: 9px;
+        margin-top: 20px;
+    }
+    .child .in{
+        margin-top: 15px;
+        height: 46px;
+        width: 100%;
+        background: white;
+        border: solid 2px #FF2F6B;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .child .in input{
+        border-radius:16px;
+        padding: 3px;
+        margin-left: 10px;
+        border: 0px;
+        height: 37px;
+        font-size: 17px;
+        width: 90%;
+    }
+    .child .in input:focus {
+        outline: none;
+    }
+    .child .in .but{
+        height: 35px;
+        padding: 2px 2px;
+        font-size: 12px;
+        border-radius: 16px;
+        border: 2px solid #FF2F6B;
+        background-color: #FF2F6B;
+        margin-right: 4px;
+        color: white;
+        font-weight: 800;
+    }
+
+    /* about section for tab responsive */
+    .about{
+        height: 15vh;
+        width: 100%;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about h1{
+        color: white;
+        font-size: 29px;
+        margin-top: 0px;
+    }
+    .about .me{
+        color: #FF2F6B;
+    }
+    .abc{
+        height: 85%;
+        width: 100%;
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .abc .col{
+        height: 80%;
+        width: 48%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 20px;
+        margin-left: 0px;
+    
+    }
+    .abc .col h4{
+        color: white;
+        font-size: 30px;
+        font-weight: 800;
+        margin-top: 20px;
+    }
+    .abc .col p{
+        margin-top: 20px;
+        color: gainsboro;
+        font-size: 19px;
+        text-align: justify;
+        line-height: 305x;
+    }
+    .abc .col .dhana{
+        color: #FF2F6B;
+    }
+    .abc .col .btn{
+        text-decoration: none;
+    }
+    .abc .col .btn button{
+        margin-top: 20px;
+        padding: 10px;
+        background-color:#FF2F6B;
+        color:white;
+        height: 7%;
+        width: 100%;
+        border-radius: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 800;
+        border:#FF2F6B 2px solid;
+    }
+    .abc .col .btn button:hover{
+        background: black;
+        color: #FF2F6B;
+        /* height: 7%;
+        width: 100%; */
+    }
+    .abc .rgb{
+        margin-right: 00px;
+        height: 80%;
+        width: 48%;
+    }
+    .abc .rgb img{
+        height: 100%;
+        width: 100%;
+    }
+
+    /* skills section for tab responsive */
+    .skills{
+        height: 130vh;
+        width: 100%;
+        background: black;
+    }
+    .skil{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .skil h1{
+        color: white;
+        font-size: 29px;
+    }
+    .skil .my{
+        color: #FF2F6B;
+    }
+    .avg{
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .avg .one{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .avg .one .skil1{
+        height: 70%;
+        width: 27%;
+        box-shadow: 0px 0px 10px 1px gainsboro;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .avg .one .skil1:hover{
+        height: 70%;
+        width: 27%;
+        box-shadow: 0px 0px 0px 0px black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .avg .one .skil1 .a{
+        height: 140px;
+        width: 140px;
+        border-radius: 140px;
+        border:#FF2F6B 9px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .avg .one .skil1 .a p{
+        color: white;
+        font-size: 37px;
+        font-weight: 800;
+    }
+    .avg .one .skil1 h1{
+        color: white;
+        font-size: 27px;
+    }
+    .avg .one .skil2{
+        height: 70%;
+        width: 27%;
+        box-shadow: 0px 0px 10px 1px gainsboro;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .avg .one .skil2:hover{
+        height: 70%;
+        width: 27%;
+        box-shadow: 0px 0px 0px 0px black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .avg .one .skil2 .b{
+        height: 140px;
+        width: 140px;
+        border-radius: 140px;
+        border:#FF2F6B 9px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .avg .one .skil2 .b p{
+        color: white;
+        font-size: 37px;
+        font-weight: 800;
+    }
+    .avg .one .skil2 h1{
+        color: white;
+        font-size: 27px;
+    }
+    .avg .one .skil3{
+        height: 70%;
+        width: 27%;
+        box-shadow: 0px 0px 10px 1px gainsboro;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .avg .one .skil3:hover{
+        height: 70%;
+        width: 27%;
+        box-shadow: 0px 0px 0px 0px black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .avg .one .skil3 .c{
+        height: 140px;
+        width: 140px;
+        border-radius: 140px;
+        border:#FF2F6B 9px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .avg .one .skil3 .c p{
+        color: white;
+        font-size: 37px;
+        font-weight: 800;
+    }
+    .avg .one .skil3 h1{
+        color: white;
+        font-size: 27px;
+    }
+    
+    .avg .two{
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .avg .two .skil4{
+        height: 70%;
+        width: 27%;
+        box-shadow: 0px 0px 10px 1px gainsboro;
+        border-radius: 20px;
+        margin-left: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .avg .two .skil4:hover{
+        height: 70%;
+        width: 27%;
+        box-shadow: 0px 0px 0px 0px black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .avg .two .skil4 .d{
+        height: 140px;
+        width: 140px;
+        border-radius: 140px;
+        border:#FF2F6B 9px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .avg .two .skil4 .d p{
+        color: white;
+        font-size: 37px;
+        font-weight: 800;
+    }
+    .avg .two .skil4 h1{
+        color: white;
+        font-size: 27px;
+    }
+    .avg .two .skil5{
+        height: 70%;
+        width: 27%;
+        box-shadow: 0px 0px 10px 1px gainsboro;
+        border-radius: 20px;
+        margin-right: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .avg .two .skil5:hover{
+        height: 70%;
+        width: 27%;
+        box-shadow: 0px 0px 0px 0px black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .avg .two .skil5 .e{
+        height: 140px;
+        width: 140px;
+        border-radius: 140px;
+        border:#FF2F6B 9px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .avg .two .skil5 .e p{
+        color: white;
+        font-size: 37px;
+        font-weight: 800;
+    }
+    .avg .two .skil5 h1{
+        color: white;
+        font-size: 27px;
+    }
+
+    /* contact section for tab responsive */
+    .contact{
+        height: 100vh;
+        width: 100%;
+        background: black;
+    }
+    .contact .con{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact .con h1{
+        color: white;
+        font-size: 29px;
+    }
+    .contact .con .us{
+        color: #FF2F6B;
+    }
+    .contact .name{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .name .num{
+        height: 90%;
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .contact .name .num .apple{
+        height: 33px;
+        width: 77%; 
+        font-size: 17px;
+        padding: 0px 10px;
+    } 
+    .contact .name .num .apple:focus{
+        outline: none;
+    }
+    .contact .name .num .banana{
+        height: 33px;
+        width: 77%; 
+        font-size: 17px;
+        padding: 0px 10px;
+    } 
+    .contact .name .num .banana:focus{
+        outline: none;
+    }
+    .contact .name .num .mango{
+        font-size: 17px;
+        padding: 0px 10px;
+        width: 77%;
+        height: 50%;
+    }
+    .contact .name .num .mango:focus{
+        outline: none;
+    }
+    .contact .name .num .kiwi{
+        background-color: #FF2F6B;
+        color: white;
+        padding: 10px 14px;
+        height: 50px;
+        border-radius: 35px;
+        font-size: 16px;
+        border: #FF2F6B 2px solid;
+        font-weight: 800;
+    }
+    .contact .name .num .kiwi:hover{
+        background: black;
+        color: #FF2F6B;
+    }
+    .contact .name .mail{
+        margin-bottom: 55px;
+        height: 90%;
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .contact .name .mail .touch{
+        color: white;
+        word-spacing: 4px;
+    }
+    .contact .name .mail p{
+        color: gainsboro;
+        font-size: 18px;
+        text-align: justify;
+        line-height: 30px;
+    }
+    .contact .name .mail .tube{
+        height: 50%;
+        width: 87%;
+    }
+    .contact .name .mail .tube .tube1{
+        height: 33%;
+        width: 100%;
+        display: flex;
+    }
+    .contact .name .mail .tube .tube1 .female{
+        height: 100%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+    .contact .name .mail .tube .tube1 .female .torso{
+        font-size: 60px;
+    }
+    .contact .name .mail .tube .tube1 .female .torso:hover{
+        color: #FF2F6B !important;
+    }
+    .contact .name .mail .tube .tube1 .fem{
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact .name .mail .tube .tube1 .fem h3{
+        color: white;
+        font-size: 20px;
+    }
+    .contact .name .mail .tube .tube1 .fem p{
+        color: gainsboro;
+        font-size: 16px;
+    }
+    .contact .name .mail .tube .tube2{
+        height: 33%;
+        width: 100%;
+        display: flex;
+    }
+    .contact .name .mail .tube .tube2 .address{
+        height: 100%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+    .contact .name .mail .tube .tube2 .address .man{
+        font-size: 47px;
+    }
+    .contact .name .mail .tube .tube2 .address .man:hover{
+        color: #FF2F6B !important;
+    }
+    .contact .name .mail .tube .tube2 .location{
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact .name .mail .tube .tube2 .location h3{
+        color: white;
+        font-size: 20px;
+    }
+    .contact .name .mail .tube .tube2 .location p{
+        color: gainsboro;
+        font-size: 16px;
+    }
+    .contact .name .mail .tube .tube3{
+        height: 33%;
+        width: 100%;
+        display: flex;
+    }
+    .contact .name .mail .tube .tube3 .main{
+        height: 100%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+    .contact .name .mail .tube .tube3 .main .mono{
+        font-size: 53px;
+    }
+    .contact .name .mail .tube .tube3 .main .mono:hover{
+        color: #FF2F6B !important;
+    }
+    .contact .name .mail .tube .tube3 .sec{
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact .name .mail .tube .tube3 .sec h3{
+        color: white;
+        font-size: 20px;
+    }
+    .contact .name .mail .tube .tube3 .sec p{
+        color: gainsboro;
+        font-size: 16px;
+    }
+    .contact .foot{
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .foot h2{
+        color: white;  
+        word-spacing: 5px;
+        font-size: 20px;
+    }
+    .contact .foot .footer{
+        color: #FF2F6B;
+    }
+  
+}
+
+/* for mobile responsive using media queries */
+
+/* home section for mobile responsive */
+@media only screen and (max-width:426px){
+    ::selection{
+        color:black;
+        background: #FF2F6B;
+    }
+    .parent{
+        height: 100%;
+        width: 100%;
+        background:black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .parent .head{
+        height: 20%;
+        width: 100%;
+        display: block;
+        margin-left: 0px;
+        padding: 0px 2px;
+    }
+    /* for heading */
+    .parent .head h2{
+        color: white;
+        font-size: 25px;
+        margin-left: 17px;
+    }
+    /* changes the frst letter of heading using pseudo elements */
+    h2::first-letter{
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .parent .home{
+        height: 40%;
+        width: 100%;  
+    }
+    /* to assemble nav bar */
+    .parent .home ul{
+        height: 100%;
+        width: 100%;
+        display: none;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style-type: none;
+        font-size: 18px;
+        font-weight: 800;
+        text-align: center;
+        padding: 10px 0px;
+    }
+    /* to remove the underline in anchor tag */
+    .parent .home ul a{
+        text-decoration: none;
+        color: white;
+    }
+    /* using hover to mouse actions */
+    .parent .home ul a:hover{
+        color: #FF2F6B;
+    }
+    .parent .sub {
+        height: 20%;
+        width: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    /* button properties */
+    .parent .sub button{
+        padding: 16px;
+        background-color: #FF2F6B;
+        color: black;
+        height: 17%;
+        width: 40%;
+        border-radius: 35px;
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        border: black 2px solid;
+        font-weight: 800;
+    }
+    /* button hover to mouse actions */
+    .parent .sub button:hover{
+        background: black;
+        color: #FF2F6B;
+    }
+     .parent .nav{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .parent .nav .bar{
+        font-size: 40px;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .child{
+        height: 100%;
+        width: 100%;
+        background: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .child .image{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* to fix image */
+    .child .image img{
+        width: 100%;
+        height: 100%;
+    }
+    /* the following informations */
+    .child .texts{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px;
+        flex-direction: column;
+    }
+    .child .texts h3{
+        color: gainsboro;
+        word-spacing: 7px;
+        font-size: 19px;
+        margin-top: 0px;
+    }
+    .child .texts h1{
+        color: white;
+        margin-top: 5px;
+        font-size: 30px;
+        margin-top: 0px;
+    }
+    .child .texts .laks{
+        color: #FF2F6B;
+    }
+    .child .texts p{
+        display: flex;
+        text-align: justify;
+        color: gainsboro;
+        font-size: 17px;
+        margin-top: 5px;
+        word-spacing: 6px;
+        font-weight: 800;
+        margin-top: 0px;
+    }
+    .child .texts .info{
+        color: #FF2F6B;
+        font-size: 21px;
+        word-spacing: 3px;
+        font-weight: 800;
+        margin-top: 0px;
+    }
+     .child .in{
+        margin-top: 30px;
+        height: 13%;
+        width: 30%;
+        background: black;
+        border: solid 0px black;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2px;
+        margin-top: 0px;
+    } 
+    .child .in input{
+        border-radius:0px;
+        padding: 0px;
+        margin-left: 0px;
+        border: 0px;
+        height: 0px;
+        font-size: 0px;
+    }
+    .child .in input:focus {
+        outline: none;
+    } 
+    .child .in .but{
+        margin-left: 4px;
+        height: 50%;
+        width: 100%;
+        padding: 4px 4px;
+        font-size: 15px;
+        border-radius: 20px;
+        border: 2px solid #FF2F6B;
+        background-color: #FF2F6B;
+        color: white;
+        margin-top: 10px;
+    }
+
+    /* about section for mobile responsive */
+    .about{
+        height: 15vh;
+        width: 100%;
+        background: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about h1{
+        color: white;
+        font-size: 29px;
+        margin-top: 0px;
+    }
+    .about .me{
+        color: #FF2F6B;
+    }
+    .abc{
+        height: 100%;
+        width: 100%;
+        background: black;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .abc .col{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 20px;
+        margin-left: 0px;
+    }
+    .abc .col h4{
+        color: white;
+        font-size: 22px;
+        font-weight: 800;
+        margin-top: 20px;
+    }
+    .abc .col p{
+        margin-top: 10px;
+        color: gainsboro;
+        font-size: 17px;
+        text-align: justify;
+        line-height: 30px;
+        font-weight: 800;
+    }
+    .abc .col .dhana{
+        color: #FF2F6B;
+    }
+    .abc .col .btn{
+        text-decoration: none;
+    }
+    .abc .col .btn button{
+        margin-top: 10px;
+        padding: 8px;
+        background-color:#FF2F6B;
+        color:white;
+        height: 3%;
+        width: 100%;
+        border-radius: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: 800;
+        border:#FF2F6B 2px solid;
+    }
+    .abc .col .btn button:hover{
+        background: black;
+        color: #FF2F6B;
+    }
+    .abc .rgb{
+        margin-right: 0px;
+        height: 100%;
+        width: 100%;
+    }
+    .abc .rgb img{
+        height: 100%;
+        width: 100%;
+    }
+
+    /* skill section for mobile responsive */
+    .skills{
+        height: 247vh;
+        width: 100%;
+        background: black;
+    }
+    .skil{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .skil h1{
+        color: white;
+        font-size: 29px;
+    }
+    .skil .my{
+        color: #FF2F6B;
+    }
+    .avg{
+        height: 250vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .avg .one{
+        height: 150vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .avg .one .skil1{
+        height: 25%;
+        width: 55%;
+        box-shadow: 0px 0px 10px 1px gainsboro;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .avg .one .skil1:hover{
+        height: 25%;
+        width: 55%;
+        box-shadow: 0px 0px 0px 0px black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .avg .one .skil1 .a{
+        height: 140px;
+        width: 140px;
+        border-radius: 140px;
+        border:#FF2F6B 7px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .avg .one .skil1 .a p{
+        color: white;
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .avg .one .skil1 h1{
+        color: white;
+        font-size: 25px;
+    }
+    .avg .one .skil2{
+        height: 25%;
+        width: 55%;
+        box-shadow: 0px 0px 10px 1px gainsboro;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .avg .one .skil2:hover{
+        height: 25%;
+        width: 55%;
+        box-shadow: 0px 0px 0px 0px black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .avg .one .skil2 .b{
+        height: 140px;
+        width: 140px;
+        border-radius: 140px;
+        border:#FF2F6B 7px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .avg .one .skil2 .b p{
+        color: white;
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .avg .one .skil2 h1{
+        color: white;
+        font-size: 25px;
+    }
+    .avg .one .skil3{
+        height: 25%;
+        width: 55%;
+        box-shadow: 0px 0px 10px 1px gainsboro;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .avg .one .skil3:hover{
+        height: 25%;
+        width: 55%;
+        box-shadow: 0px 0px 0px 0px black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .avg .one .skil3 .c{
+        height: 140px;
+        width: 140px;
+        border-radius: 140px;
+        border:#FF2F6B 7px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .avg .one .skil3 .c p{
+        color: white;
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .avg .one .skil3 h1{
+        color: white;
+        font-size: 25px;
+    }
+    
+    .avg .two{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background: black;
+    }
+    .avg .two .skil4{
+        height: 40%;
+        width: 55%;
+        box-shadow: 0px 0px 10px 1px gainsboro;
+        border-radius: 20px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .avg .two .skil4:hover{
+        height: 40%;
+        width: 55%;
+        box-shadow: 0px 0px 0px 0px black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .avg .two .skil4 .d{
+        height: 140px;
+        width: 140px;
+        border-radius: 140px;
+        border:#FF2F6B 7px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .avg .two .skil4 .d p{
+        color: white;
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .avg .two .skil4 h1{
+        color: white;
+        font-size: 25px;
+    }
+    .avg .two .skil5{
+        height: 40%;
+        width: 55%;
+        box-shadow: 0px 0px 10px 1px gainsboro;
+        border-radius: 20px;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .avg .two .skil5:hover{
+        height: 40%;
+        width: 55%;
+        box-shadow: 0px 0px 0px 0px black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .avg .two .skil5 .e{
+        height: 140px;
+        width: 140px;
+        border-radius: 140px;
+        border:#FF2F6B 7px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .avg .two .skil5 .e p{
+        color: white;
+        font-size: 40px;
+        font-weight: 800;
+    }
+    .avg .two .skil5 h1{
+        color: white;
+        font-size: 25px;
+    }
+
+    /* contact section for mobile responsive */
+    .contact{
+        margin-top: 20px;
+        height: 100%;
+        width: 100%;
+        background: black;
+        margin-top: 157px;
+    }
+    .contact .con{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact .con h1{
+        color: white;
+        font-size: 29px;
+        margin-top: 28px;
+    }
+    .contact .con .us{
+        color: #FF2F6B;
+    }
+    .contact .name{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center; 
+        align-items: center; 
+        margin-top: 20px;
+    }
+    .contact .name .num{
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+    .contact .name .num .apple{
+        height: 33px;
+        width: 90%; 
+        font-size: 17px;
+        padding: 0px 10px;
+    } 
+    .contact .name .num .banana{
+        height: 33px;
+        width: 90%; 
+        font-size: 17px;
+        padding: 0px 10px;
+    } 
+    .contact .name .num .mango{
+        font-size: 17px;
+        padding: 0px 10px;
+        width: 90%;
+    }
+    .contact .name .num .kiwi{
+        background-color: #FF2F6B;
+        color: white;
+        padding: 10px 14px;
+        height: 50px;
+        border-radius: 35px;
+        font-size: 16px;
+        border: #FF2F6B 2px solid;
+        font-weight: 800;
+    }
+    .contact .name .num .kiwi:hover{
+        background: black;
+        color: #FF2F6B;
+    }
+    .contact .name .mail{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    .contact .name .mail .touch{
+        color: white;
+        word-spacing: 0px;
+    }
+    .contact .name .mail p{
+        color: gainsboro;
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
+        padding: 0px 10px;
+    }
+    .contact .name .mail .tube{
+        height: 50%;
+        width: 60%;
+    }
+    .contact .name .mail .tube .tube1{
+        height: 33%;
+        width: 100%;
+        display: flex;
+    }
+    .contact .name .mail .tube .tube1 .female{
+        height: 100%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+    .contact .name .mail .tube .tube1 .female .torso{
+        font-size: 60px;
+    }
+    .contact .name .mail .tube .tube1 .fem{
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact .name .mail .tube .tube1 .fem h3{
+        color: #FF2F6B;
+        font-size: 20px;
+    }
+    .contact .name .mail .tube .tube1 .fem p{
+        color: gainsboro;
+        font-size: 16px;
+    }
+    .contact .name .mail .tube .tube2{
+        height: 33%;
+        width: 100%;
+        display: flex;
+    }
+    .contact .name .mail .tube .tube2 .address{
+        height: 100%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+    .contact .name .mail .tube .tube2 .address .man{
+        font-size: 47px;
+    }
+    .contact .name .mail .tube .tube2 .location{
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact .name .mail .tube .tube2 .location h3{
+        color: #FF2F6B;
+        font-size: 20px;
+    }
+    .contact .name .mail .tube .tube2 .location p{
+        color: gainsboro;
+        font-size: 16px;
+    }
+    .contact .name .mail .tube .tube3{
+        height: 33%;
+        width: 100%;
+        display: flex;
+    }
+    .contact .name .mail .tube .tube3 .main{
+        height: 100%;
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+    .contact .name .mail .tube .tube3 .main .mono{
+        font-size: 53px;
+    }
+    .contact .name .mail .tube .tube3 .sec{
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact .name .mail .tube .tube3 .sec h3{
+        color:#FF2F6B;
+        font-size: 20px;
+    }
+    .contact .name .mail .tube .tube3 .sec p{
+        color: gainsboro;
+        font-size: 16px;
+    }   
+    .contact .foot{
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .foot h2{
+        color: white;  
+        word-spacing: 5px;
+        font-size: 16px;
+    }
+    .contact .foot .footer{
+        color: #FF2F6B;
+    }   
+}
+.parent .home .menubar.showmenu{
+    display: flex;
+} 
